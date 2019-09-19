@@ -1,0 +1,41 @@
+nav ul {
+    display: flex;
+    padding: 10px;
+    margin: 0;
+  }
+  
+ nav li {
+    margin: 1em;
+    border-left: solid 1px #d4d4d4;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 1em;
+    padding-left: 1em;
+  }
+
+  .body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #272727;
+  }
+
+  .slider{
+      width: 500px;
+      height: 300px;
+      background: url(../image-slider/img1.jpeg);
+      animation: change-bg 10s linear infinite;
+  }
+  
+  @keyframes change-bg{
+    0%{ background:url(../image-slider/img1.jpeg);}
+    20%{ background:url(../image-slider/img1.jpeg);}
+    25%{ background:url(../image-slider/img2.jpeg);}
+    45%{ background:url(../image-slider/img2.jpeg);}
+    50%{ background:url(../image-slider/img3.jpg);}
+    70%{ background:url(../image-slider/img3.jpg);}
+    75%{ background:url(../image-slider/img4.jpg);}
+    100%{ background:url(../image-slider/img4.jpg);}
+  }
